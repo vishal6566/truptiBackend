@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: "https://trupti-dashboardcumproduct.netlify.app", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 //Routes imports
 const userRoute = require("./routes/userRoute");
 const productRoute = require("./routes/productRoute");
